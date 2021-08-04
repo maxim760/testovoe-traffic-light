@@ -1,0 +1,23 @@
+.red {
+  background-color: red;
+  filter: contrast(200%)
+}
+.yellow {
+  background-color: yellow;
+  filter: contrast(200%)
+}
+.green {
+  background-color: #45E00B;
+  filter: contrast(200%)
+  ;
+}
+
+.red-pale {
+  background-color: rgba(228, 149, 149, 0.76);  
+}
+.yellow-pale {
+  background-color: rgba(243, 243, 145, 0.685);  
+}
+.green-pale {
+  background-color: #78e9619f;  
+}

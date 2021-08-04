@@ -1,0 +1,15 @@
+@keyframes blink {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0.5;
+  }
+}
+.flash {
+  animation: blink 0.8s both infinite;
+  transition: opacity 0.05s ease-in;
+}

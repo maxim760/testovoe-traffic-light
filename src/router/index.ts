@@ -1,19 +1,32 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
-import Home from '../views/Home.vue';
+import { Colors, paths, TrafficLightParams } from '@/utils/constants';
+import Main from '../views/Main.vue';
 
 const routes: Array<RouteRecordRaw> = [
   {
-    path: '/',
-    name: 'Home',
-    component: Home,
+    path: paths[Colors.Red],
+    name: 'RedColor',
+    props: TrafficLightParams[Colors.Red],
+    component: Main,
+    sensitive: false,
   },
   {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue'),
+    path: paths[Colors.Yellow],
+    name: 'YellowColor',
+    props: TrafficLightParams[Colors.Yellow],
+    component: Main,
+    sensitive: false,
+  },
+  {
+    path: paths[Colors.Green],
+    name: 'GreenColor',
+    props: TrafficLightParams[Colors.Green],
+    component: Main,
+    sensitive: false,
+  },
+  {
+    path: '/:catchAll(.*)',
+    redirect: paths[Colors.Red],
   },
 ];
 
