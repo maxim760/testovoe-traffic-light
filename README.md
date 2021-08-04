@@ -1,6 +1,8 @@
 # traffick-light
 <a href="https://testovoe-traffic-light.vercel.app/">Ссылка на сайт, куда задеплоил тестовое</a>
 
+yarn или npm
+
 ## Project setup
 ```
 yarn install
